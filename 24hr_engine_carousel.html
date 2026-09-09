@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      @page {
+        size: 1080px 1080px;
+        margin: 0;
+      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #031c2e;
+        color: white;
+      }
+      .slide {
+        width: 1080px;
+        height: 1080px;
+        page-break-after: always;
+        break-after: page;
+        background: linear-gradient(160deg, #031c2e 0%, #082136 50%, #0e2d45 100%);
+        padding: 85px 85px 75px 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+      }
+      .slide::before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 450px;
+        height: 450px;
+        background: radial-gradient(circle, rgba(45, 212, 191, 0.08) 0%, rgba(3, 28, 46, 0) 70%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .slide-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .slide-tag {
+        color: #2dd4bf;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .slide-num {
+        color: #94a3b8;
+        font-size: 19px;
+        font-weight: 600;
+      }
+      .slide-body {
+        margin: auto 0;
+      }
+      .slide-title {
+        font-size: 50px;
+        font-weight: 800;
+        line-height: 1.25;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+      .subtitle {
+        font-size: 26px;
+        line-height: 1.45;
+        color: #94a3b8;
+        margin-bottom: 24px;
+      }
+      .bullet-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 0;
+      }
+      .bullet-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        font-size: 26px;
+        line-height: 1.4;
+      }
+      .bullet-dot {
+        width: 13px;
+        height: 13px;
+        background: #2dd4bf;
+        border-radius: 50%;
+        margin-top: 10px;
+        flex-shrink: 0;
+        box-shadow: 0 0 10px rgba(45, 212, 191, 0.6);
+      }
+      .bullet-content strong {
+        color: #ffffff;
+        font-weight: 700;
+      }
+      .bullet-content span {
+        color: #cbd5e1;
+      }
+      .callout-box {
+        background: rgba(14, 45, 69, 0.65);
+        border-left: 5px solid #2dd4bf;
+        border-radius: 10px;
+        padding: 22px 28px;
+        font-size: 24px;
+        line-height: 1.45;
+        color: #e2e8f0;
+        margin-top: 24px;
+      }
+      .slide-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(255,255,255,0.12);
+        padding-top: 24px;
+      }
+      .brand-tag {
+        font-size: 22px;
+        font-weight: 700;
+        color: #cbd5e1;
+      }
+      .swipe-prompt {
+        color: #2dd4bf;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+    </style>
+    </head>
+    <body>
+    
+        <div class="slide">
+          <div class="slide-header">
+            <span class="slide-tag">CROSS-BORDER RCM</span>
+            <span class="slide-num">01 / 05</span>
+          </div>
+          <div class="slide-body">
+            <h1 class="slide-title">The 24-Hour AI Engine for US Clinics</h1>
+            <p class="subtitle">How AI + timezones eliminate billing backlogs while you sleep.</p>
+            
+            <div class="callout-box"><strong>Key Takeaway:</strong> Why US practices are ditching 9-to-5 billing for continuous 24-hour cycles.</div>
+          </div>
+          <div class="slide-footer">
+            <span class="brand-tag">Aethera Healthcare Solutions</span>
+            <span class="swipe-prompt">Swipe Next ➔</span>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <div class="slide-header">
+            <span class="slide-tag">5:00 PM EST</span>
+            <span class="slide-num">02 / 05</span>
+          </div>
+          <div class="slide-body">
+            <h1 class="slide-title">Encounter Batch Closes</h1>
+            <p class="subtitle">US doctors finalize charting for the day.</p>
+            <div class="bullet-list">
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>Lock EHR:</strong> <span>Clinical notes and provider charges signed off.</span></div>
+                </div>
+                
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>EDI 837 Export:</strong> <span>Raw encounter files queued for intake.</span></div>
+                </div>
+                </div>
+            
+          </div>
+          <div class="slide-footer">
+            <span class="brand-tag">Aethera Healthcare Solutions</span>
+            <span class="swipe-prompt">Swipe Next ➔</span>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <div class="slide-header">
+            <span class="slide-tag">6:00 PM EST</span>
+            <span class="slide-num">03 / 05</span>
+          </div>
+          <div class="slide-body">
+            <h1 class="slide-title">Deterministic AI Scrubbing</h1>
+            <p class="subtitle">Rules engine checks thousands of payer edits.</p>
+            <div class="bullet-list">
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>NCCI Bundling:</strong> <span>Columns 1 & 2 evaluated in milliseconds.</span></div>
+                </div>
+                
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>Modifier Crosswalk:</strong> <span>Payer-specific policy rules verified.</span></div>
+                </div>
+                </div>
+            
+          </div>
+          <div class="slide-footer">
+            <span class="brand-tag">Aethera Healthcare Solutions</span>
+            <span class="swipe-prompt">Swipe Next ➔</span>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <div class="slide-header">
+            <span class="slide-tag">NIGHT HOURS</span>
+            <span class="slide-num">04 / 05</span>
+          </div>
+          <div class="slide-body">
+            <h1 class="slide-title">India Clinical Review</h1>
+            <p class="subtitle">Certified AAPC specialists in Chennai take over.</p>
+            <div class="bullet-list">
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>Exception Resolution:</strong> <span>Humans review AI-flagged edge cases.</span></div>
+                </div>
+                
+                <div class="bullet-item">
+                  <div class="bullet-dot"></div>
+                  <div class="bullet-content"><strong>Denial Appeals:</strong> <span>Appeals drafted against morning remittances.</span></div>
+                </div>
+                </div>
+            
+          </div>
+          <div class="slide-footer">
+            <span class="brand-tag">Aethera Healthcare Solutions</span>
+            <span class="swipe-prompt">Swipe Next ➔</span>
+          </div>
+        </div>
+        
+        <div class="slide">
+          <div class="slide-header">
+            <span class="slide-tag">7:00 AM EST</span>
+            <span class="slide-num">05 / 05</span>
+          </div>
+          <div class="slide-body">
+            <h1 class="slide-title">Zero Backlog at Clinic Open</h1>
+            <p class="subtitle">Clean claims submitted before the first patient walks in.</p>
+            
+            <div class="callout-box"><strong>Get the Full Guide:</strong> Visit aetherahealthcare.com to benchmark your practice turnaround time.</div>
+          </div>
+          <div class="slide-footer">
+            <span class="brand-tag">Aethera Healthcare Solutions</span>
+            <span class="swipe-prompt">Save & Share 🔖</span>
+          </div>
+        </div>
+        
+    </body>
+    </html>
